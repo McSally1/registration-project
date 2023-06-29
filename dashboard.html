@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MCSALLY BRAND</title>
+  </head>
+  <body>
+    <h1>YOU'RE WELCOME <span class="names"></span>, TO MCSALLY BRAND</h1>
+    <script>
+      //get info from page
+      const names = document.querySelector(".names");
+
+      //retrieve info of the registered user
+      const getuserInfo = sessionStorage.getItem("users");
+      if (getuserInfo) {
+        const userData = JSON.parse(getuserInfo);
+        names.textContent = userData.fullname;
+      }
+    </script>
+  </body>
+</html>

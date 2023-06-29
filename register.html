@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- <script src="script.js"></script> -->
+  </head>
+  <body>
+    <!-- testing forms using js -->
+    <div class="test-form">
+      <form class="submit" action="">
+        <h1>REGISTRATION FORM</h1>
+        <input
+          type="text"
+          name="names"
+          id=""
+          placeholder="Enter full name"
+        /><br />
+        <span class="name_err" style="color: red"></span><br />
+        <input
+          type="text"
+          name="address"
+          id="Add"
+          placeholder="Enter Address"
+        /><br />
+        <span class="address_err" style="color: red"></span><br />
+        <input
+          type="email"
+          name="email"
+          id="Email"
+          placeholder="Enter Email"
+        /><br />
+        <span class="email_err" style="color: red"></span><br />
+        <input
+          type="text"
+          name="username"
+          id="userName"
+          placeholder="Enter Username"
+        /><br />
+        <span class="userName_err" style="color: red"></span><br />
+        <input
+          type="password"
+          name="password"
+          id="pw"
+          placeholder="Enter Password"
+        /><br />
+        <span class="pw_err" style="color: red"></span><br />
+        <span class="show">Show Password</span
+        ><input
+          type="checkbox"
+          class="input-show"
+          onclick="showPassword()"
+        /><br />
+        <button class="btn">Register</button>
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
